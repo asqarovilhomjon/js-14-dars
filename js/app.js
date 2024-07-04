@@ -30,8 +30,8 @@ form.addEventListener("submit", (event) => {
   contentImage.style.display = "none";
 
   let date = new Date();
-  let hour = date.getHours();
-  let minute = date.getMinutes();
+  let hour = date.getHours().toString().padStart(2, "0");
+  let minute = date.getMinutes().toString().padStart(2, "0");
 
   let div = document.createElement("div");
   div.className = "message my-message";
@@ -50,8 +50,8 @@ function partnerSendMessage() {
   let secund = Math.floor(Math.random() * 10000);
   setTimeout(() => {
     let date = new Date();
-    let hour = date.getHours();
-    let minute = date.getMinutes();
+    let hour = date.getHours().toString().padStart(2, "0");
+    let minute = date.getMinutes().toString().padStart(2, "0");
 
     let index = Math.floor(Math.random() * DATA.length);
     let div = document.createElement("div");

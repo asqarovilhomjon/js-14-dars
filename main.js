@@ -8,7 +8,7 @@ function clock(){
     var today = new Date();
 
     document.getElementById('Date').innerHTML = (dayNames[today.getDay()] + " " + 
-    today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' +today.getFullYear());
+    today.getDate().toString().padStart(2, "0") + ' ' + monthNames[today.getMonth()] + ' ' +today.getFullYear());
 
     
     var h = today.getHours();

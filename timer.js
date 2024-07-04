@@ -1,14 +1,11 @@
-// Vaqt o'lchovlarini saqlash uchun o'zgaruvchilar
 let startTime, currentTime, elapsedTime = 0, timerInterval;
 let running = false;
 
-// Elementlarni olish
 const display = document.getElementById('display');
 const startButton = document.getElementById('start');
 const pauseButton = document.getElementById('pause');
 const resetButton = document.getElementById('reset');
 
-// Tugmachalarga voqea tinglovchilar qo'shish
 startButton.addEventListener('click', startTimer);
 pauseButton.addEventListener('click', pauseTimer);
 resetButton.addEventListener('click', resetTimer);

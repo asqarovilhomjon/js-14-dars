@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 200px;
+    height: 100vh;
+    margin: 0;
+    background-color: #0009;
+    font-family: Arial, sans-serif;
+}
+
+.timerclock{
+    text-align: center;
+    background-color: #fff4;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 8px rgba(56, 56, 56, 0.1);
+}
+
+#display {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start {
+    border: none;
+    background-color: #dc3545;
+    color: white;
+}
+
+.pause {
+    border: none;
+    background-color: orange;
+    color: white;
+}
+
+.reset {
+    border: none;
+    background-color: #28a745;
+    color: white;
+}
+
+
+.pages{
+    display: flex;
+    margin-left: 1000px;
+    gap: 10px;
+}
+.telegram{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(20, 196, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+.clock{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
